@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex working</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 1000px;
+        height: 700px;
+        background-color: palevioletred;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        /* overflow: hidden; */
+        /* overflow-y: scroll; */
+      }
+      #img1 {
+        order: 2;
+        flex-grow: 5;
+        /* flex-basis: 50%; */
+      }
+      #img2 {
+        order: 3;
+        /* flex-grow: 2; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img id="img1" src="assets/images/image-top-laptops.jpg" alt="" />
+      <img src="assets/images/image-retro-pcs.jpg" alt="" />
+      <img src="assets/images/image-retro-pcs.jpg" alt="" />
+      <img src="assets/images/image-retro-pcs.jpg" alt="" />
+      <img src="assets/images/image-retro-pcs.jpg" alt="" />
+      <img src="assets/images/image-retro-pcs.jpg" alt="" />
+      <img id="img2" src="assets/images/image-gaming-growth.jpg" alt="" />
+      <img src="assets/images/image-retro-pcs.jpg" alt="" />
+    </div>
+  </body>
+</html>

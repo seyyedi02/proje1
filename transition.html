@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-transform-transition</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            margin: 100px;
+            background-color: lightpink;
+            border: 2px solid red;
+            text-align: center;
+            padding-top: 40px;
+            /* transition: all 2s;   */
+            transition: width  ,height ;
+            transition-duration: 2s;
+            transition-timing-function:ease ;
+        }
+        /* div:hover
+        {
+            background-color: rgb(29, 218, 39);
+            border: 2px solid rgb(255, 0, 200);
+             transform: translate(200px); 
+             transform: rotate(45deg); 
+        } */
+        div:hover
+        {
+            width: 250px;
+            height: 300px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div>transition</div>
+    
+ 
+</body>
+</html>

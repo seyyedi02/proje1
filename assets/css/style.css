@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "inter-Bold";
+  src: url(../fonts/static/Inter-Bold.ttf);
+}
+@font-face {
+  font-family: "inter-ExtraBold";
+  src: url(../fonts/static/Inter-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "inter-Regular";
+  src: url(../fonts/static/Inter-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: #aaa;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter-Regular";
+  font-size: 1em; /*16px*/
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  background-color: white;
+  padding: 40px;
+  position: absolute;
+  top: 0;
+}
+div.container div.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 100%;
+  padding: 20px 0 20px 0;
+}
+div.container div.header ul#menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 50%;
+}
+#header_responsive {
+  display: none;
+}
+#responsive_menu {
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: #aaa;
+  transition: all 3s;
+}
+a:hover {
+  color: #ef11e4;
+}
+div.container div.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: 100%;
+}
+div.container div.main div.left {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  flex-basis: 65%;
+}
+div.container div.main div.left img {
+  width: 100%;
+}
+div.container div.main div.left div.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+div.container div.main div.left div.content > div {
+  flex-basis: 48%;
+}
+div.container div.main div.left div.content > div h1 {
+  font-family: "inter-ExtraBold";
+  font-size: 3rem;
+}
+div.container div.main div.left div.content > div p {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+div.container div.main div.left div.content > div a {
+  padding: 15px;
+  background-color: #d14d4d;
+  border-radius: 5px;
+}
+div.container div.main div.left div.content > div a:hover {
+  background-color: #000;
+}
+div.container div.main div.right {
+  flex-basis: 30%;
+  background-color: #000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: fit-content;
+}
+div.container div.main div.right h3 {
+  color: #fff;
+}
+div.container div.main div.right p {
+  color: #aaa;
+}
+hr {
+  width: 100%;
+  border: 1px solid #aaa;
+}
+div.container div.main div.right h1 {
+  color: #e8a94f;
+}
+div.container div.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+div.container div.footer div.footerItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+div.container div.footer div.footerItem div {
+  padding-left: 10px;
+}
+div.container div.footer div.footerItem img {
+  width: 130px;
+  height: 140px;
+  transition: all 3s;
+}
+div.container div.footer div.footerItem img:hover {
+  /* transform: rotate(360deg); */
+  transform: translateY(20px);
+}
+div.container div.footer div.footerItem h3 {
+  font-family: "inter-ExtraBold";
+  font-weight: bold;
+  font-size: 30px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
